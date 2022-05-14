@@ -1,0 +1,565 @@
+:root {
+    --back1:     rgb(19,19,21);
+    --back2:     rgb(23,23,26);
+    --back3:     rgb(25,25,25);
+    --back4:     rgba(30,30,45,0.3);
+    --text1:     rgb(174,174,174);
+    --text2:     rgb(250,250,250);
+    --text3:     rgb(100,100,100);
+    --faint:     rgb(34,96,62);
+    --accent1:   rgb(44,176,107);
+    --accent2:   rgb(34,96,62);
+    --accent3:   rgb(23,67,43);
+    --newA:      rgb(251,0,79);
+}
+
+
+/*
+
+:root {
+    --back1:     rgb(44,176,107);
+    --back2:     rgb(44,149,94);
+    --back3:     rgb(44,149,94);
+    --back4:     rgba(30,30,45,0.3);
+    --text1:     rgba(0,0,0,0.69);
+    --text2:     rgb(0,0,0);
+    --text3:     rgba(0,0,0,0.29);
+    --faint:     rgba(0,0,0,0.19);
+    --accent1:   rgb(199,244,188);
+    --accent2:   rgb(34,96,62);
+    --accent3:   rgb(34,96,62);
+    --newA:      rgb(151,29,68);
+}
+
+*/
+
+*::selection {
+    background-color: var(--accent2);
+    color: var(--accent1);
+}
+
+h1, h2, h3, h4 {
+    font-family: sans-serif !important;
+}
+
+*, h1, h2, h3, h4 {
+/*
+    font-family: courier new !important;
+*/
+    font-weight: 300;
+}
+
+
+/*-------------------------------
+# BACKGROUND COLORS AND BORDERS
+-------------------------------*/
+
+/* file stuffs */
+
+#filetoc {
+    background-color: var(--back2);
+    border: 1px solid var(--faint);
+}
+
+/* audio controls */
+div.control-bar {
+    filter: invert(1);
+}
+
+img {
+    border-radius: 3px;
+    filter: sepia(10%) brightness(75%) contrast(110%);
+}
+
+td, th {
+    border-color: var(--faint) !important;
+}
+
+th, td {
+    background-color: var(--back2) !important
+}
+
+div[style="width:100%;margin:0;background-color: lavender;"],
+div[style="width:100%; margin:0; background-color: lavender"],
+th[style="background:lavender;line-height:normal;padding:0.2em;"],
+th[style="background:lavender"],
+th[style="background:#002244;color:white;"],
+th.summary,
+td[style="background-color:#DCDCDC;text-align:center;vertical-align:middle;"],
+th[style="background-color:#C3D6EF;text-align:center;vertical-align:middle;font-size:110%;"],
+th[style="background-color:#C3D6EF;"],
+div[style="font-size:100%;line-height:1.6;font-weight:bold;background:transparent;text-align:center;;background:#cdf"],
+th[style="background-color: #e4dcf6;line-height:normal;padding:0.2em 0.2em"],
+th[style="background-color: #cbe; font-size: 125%"]
+{
+  background-color: var(--back3) !important;
+}
+
+/*
+## Body
+*/
+
+body {
+    background-color: var(--back2);
+}
+
+/*
+## Article
+*/
+
+/* article background */
+.mw-body {
+    background-color: var(--back1) !important;
+    border-top: 1px solid var(--accent3);
+    border-left: 1px solid var(--accent3);
+    border-bottom: 1px solid var(--accent3);
+}
+
+/* article top banner */
+.mw-parser-output #mp-topbanner {
+    background-color: var(--back2);
+    border: 1px solid var(--faint);
+}
+
+/* article infobox */
+.infobox, .toc, .mw-parser-output .sidebar, div.thumbinner {
+    background-color: var(--back2);
+    border: 1px solid var(--faint);
+}
+
+/* article infobox and sidebar collpsibles */
+.sidebar-list-title {
+    background-color: var(--back1) !important;
+    border: 1px solid var(--back1) !important;
+}
+
+/* article infobox and sidebar cell borders*/
+.mw-parser-output .sidebar-collapse .sidebar-above, .mw-parser-output .sidebar-collapse .sidebar-below {
+    border-color: var(--faint) !important;
+}
+
+/* article series box */
+.sidebar {
+    border: 1px solid var(--faint) !important;
+}
+
+/*article inline infotable*/
+table.infobox {
+  background-color: var(--back2);
+}
+
+/* article inline infotable headers*/
+table.infobox th {
+  background: var(--trans);
+  color: var(--text1) !important;
+}
+
+/* presentation tables */
+.mw-parser-output #mp-left .mp-h2, .mw-parser-output #mp-right .mp-h2,
+.mw-parser-output #mp-tfp-h2,
+.mw-parser-output #mp-lower,
+.mw-parser-output #mp-other-lower .mp-h2 {
+    background-color: var(--back2);
+    border-color: var(--faint);
+    color: var(--text1);
+}
+
+/* mp-bordered */
+.mw-parser-output .mp-bordered, .mw-parser-output .mp-h2, body.skin-timeless .mw-parser-output .mp-h2 {
+    border-color: var(--faint) !important;
+}
+
+/* article edit module*/
+div.boilerplate {
+    border-bottom: 1px solid var(--faint) !important;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--text1) !important;
+}
+
+/* article images */
+.thumbimage {
+    border: 1px solid var(--faint);
+}
+
+/* article gallery */
+#content .gallerybox div.thumb {
+  background-color: var(--back2);
+  border: 1px solid var(--faint);
+}
+
+/* wikitables */
+table.wikitable, .wikitable td {
+  background-color: var(--back2);
+  color: var(--text2);
+  border: 1px solid var(--faint);
+}
+.wikitable > tr > th, .wikitable > * > tr > th {
+  background-color: var(--back3);
+  border: 1px solid var(--faint);
+}
+
+/*navbox*/
+.navbox-title {
+  background-color: var(--back2);
+}
+.mw-parser-output tr+tr>.navbox-abovebelow, .mw-parser-output tr+tr>.navbox-group, .mw-parser-output tr+tr>.navbox-image, .mw-parser-output tr+tr>.navbox-list {
+  border-top: 2px solid var(--faint);
+}
+.mw-parser-output .navbox-abovebelow, .mw-parser-output .navbox-group, .mw-parser-output .navbox-subgroup .navbox-title {
+  background-color: var(--back3);
+}
+.mw-parser-output .navbox-list-with-group {
+  border-left: 1px solid var(--faint);
+}
+.mw-parser-output .navbox-even {
+  background-color: var(--back2);
+}
+
+/* article see also portal */
+.mw-parser-output .portalborder {
+    border: 1px solid var(--faint);
+}
+.mw-parser-output .portalborder>ul {
+    background-color: var(--back2);
+}
+.portalborder img {
+    border: none;
+}
+
+/* Wikimedia commons notice */
+
+/* footer navbox */
+.mw-parser-output .navbox {
+    background-color: var(--back2);
+    border: 1px solid var(--faint);
+}
+.mw-parser-output .navbox table th {
+  box-shadow: none;
+}
+.mw-parser-output .navbox-title {
+    background-color: var(--back1);
+}
+
+/* footer catlinks */
+.catlinks {
+    background-color: var(--back2);
+    border: 1px solid var(--faint);
+}
+
+/* external links */
+table[role='presentation'] {
+    background-color: var(--back2) !important;
+    border: 1px solid var(--faint) !important;
+}
+
+/* Wikimedia commons*/
+.mbox-text {
+  color: var(--text1);
+}
+
+
+/*
+## Top Bar
+*/
+
+#mw-page-base {
+    background-image: linear-gradient(to bottom, var(--back1) 50%, var(--back2) 100%);
+}
+
+
+/*
+## Top Bar Menus and Search
+*/
+
+
+/*menu background*/
+.vector-menu-tabs li {
+    background-image: url(/w/skins/Vector/resrgba(64,16,16,0)common/images/tab-normal-fade.png?1cc52);
+    background-image: linear-gradient(to top,rgba(64,16,16,0) 0, var(--back3) 1px,var(--back1) 100%);
+}
+/*selected menu item background*/
+.vector-menu-tabs .selected a {
+    background-color: var(--back1) !important;
+}
+
+/*search*/
+.vector-search-box-input {
+    background-color: var(--back1);
+    border-color: var(--faint);
+    color: var(--faint);
+}
+
+/* top bar dividers */
+.vector-menu-tabs a {
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent2) 100%);
+}
+.vector-menu-tabs, #mw-head .vector-menu-dropdown .vector-menu-heading {
+    background-image: url(/w/skins/Vector/resources/common/images/tab-separator.png?09d4b);
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent2) 100%);
+}
+
+/* search results */
+
+.suggestions {
+    border: 1px solid var(--accent1);
+}
+
+.suggestions-results, .suggestions-special {
+    background-color: var(--back2);
+    color: var(--text1);
+}
+
+.suggestions-result-current {
+    background-color: var(--accent1);
+    color: var(--back2);
+}
+
+/*
+## Sidebar
+*/
+
+/* sidebar dividers */
+.vector-menu-portal .vector-menu-heading {
+    background-image: url(/w/skins/Vector/resources/common/images/portal-separator.png?4ab04);
+    background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#c8ccd1 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);
+}
+
+/* language button */
+#p-lang .mw-interlanguage-selector, #p-lang .mw-interlanguage-selector:active {
+    background-color: var(--back1);
+    border: 1px solid var(--faint);
+}
+
+/* sidebar heading underline */
+.vector-menu-portal .vector-menu-heading {
+    background-image:linear-gradient(to right,rgba(200,204,209,0) 0,rgba(200,205,209,0.33) 33%,rgba(200,205,209,0.3) 66%,rgba(200,204,209,0) 100%);
+}
+
+/*
+## Footer
+*/
+
+#footer-copyrightico, #footer-poweredbyico {
+    filter: invert(100%);
+}
+
+/*
+## Popups
+*/
+
+.mwe-popups {
+    background: none;
+}
+
+.mwe-popups .mwe-popups-extract {
+    color: var(--back2);
+}
+
+.mwe-popups-container {
+    background-color: var(--accent1) !important;
+}
+
+.mwe-popups .mwe-popups-extract[dir='ltr']:after {
+    background-image:linear-gradient(to right,rgba(255,255,255,0), var(--accent1) 50%);
+}
+
+a.mwe-popups-settings-icon span::before {
+    filter: invert(0);
+}
+
+/*
+## Image largeview interface
+*/
+
+.mw-mmv-post-image,.mw-mmv-image-metadata {
+    background-color: var(--back1);
+    color: var(--text1);
+    border-color: var(--faint);
+}
+
+/* more details button */
+.mw-ui-button.mw-ui-progressive:not(:disabled) {
+    background-color: var(--accent2);
+    border-color: var(--faint);
+}
+
+/* permission details */
+.mw-mmv-info-box {
+    background-color: var(--back2);
+    border-color: var(--faint);
+}
+
+/* view terms button */
+
+/* transparency background */
+
+.mw-mmv-image img.gif, .mw-mmv-image img.png, .mw-mmv-image img.svg, .mw-mmv-image img.tiff, .mw-mmv-image img.tif {
+    background-image: linear-gradient(to bottom, var(--back4) 50%, var(--back4) 100%);
+}
+
+
+/*-------------------------------------
+# TEXT AND UNDERLINING
+--------------------------------------*/
+
+hr {
+    background-color: var(--faint);
+}
+
+p a:hover, li a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--accent2) !important;
+}
+
+.skin-vector-legacy a.new {
+    color: var(--newA);
+}
+
+/*
+## Catchall
+*/
+
+.mw-parser-output #mp-topbanner, .mw-parser-output .mp-h2, .mw-parser-output #mp-left {
+    color: var(--text1);
+}
+
+
+/*
+## Top Bar
+*/
+
+/* User label or "not logged in" */
+.vector-user-menu-legacy #pt-anonuserpage {
+    filter: invert(0%) !important;
+    color: var(--text3);
+}
+
+/* top bar menu items */
+#ca-history a span, #ca-edit a span, #ca-talk a span, #ca-view a span, #ca-nstab-main a span, .vector-menu-tabs li a  {
+    color: var(--accent1) !important;
+}
+
+li.selected a span {
+    color: var(--text);
+}
+
+/*
+## Article
+*/
+
+/* default text */
+.mw-body, .parsoid-body {
+    color: var(--text1);
+}
+
+h1, h2 {
+    border-bottom: 1px solid var(--faint);
+}
+
+h1, h2, h3, h4 {
+    color: var(--text2);
+}
+
+/* links */
+
+a, .mw-parser-output a.extiw, .mw-parser-output a.external {
+    color: var(--accent1);
+}
+
+/* table of contents */
+.toctogglelabel {
+    color: var(--accent1);
+}
+.tocnumber {
+    color: var(--text1);
+}
+
+/* Infobox */
+.infobox-title {
+  color: var(--text3);
+}
+.infobox {
+  color: var(--text1);
+}
+
+/*
+## Sidebar
+*/
+
+div.vector-menu-content ul li#n-mainpage-description a {
+    color: var(--accent1);
+}
+
+/* sidebar links */
+.vector-menu-portal .vector-menu-content li a {
+    color: var(--accent1);
+}
+
+/* sidebar heading */
+.vector-menu-portal .vector-menu-heading {
+    color: var(--text1) !important;
+}
+
+/* languages button */
+#p-lang .mw-interlanguage-selector, #p-lang .mw-interlanguage-selector:active {
+  color: var(--text1);
+}
+
+/* sub-article page footer */
+.mw-footer li {
+    color: var(--text1);
+}
+
+
+/*-------------------------------------
+# ICONS AND IMAGES
+-------------------------------------*/
+
+/* site logo */
+.mw-wiki-logo {
+    filter: contrast(150%) brightness(70%);
+    padding: 5px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F8%2F80%2FWikipedia-logo-v2.svg%2F1200px-Wikipedia-logo-v2.svg.png&f=1&nofb=1);
+    width: 148px !important;
+    background-size: 110px;
+    
+}
+
+.thumbborder {
+  border: 1px solid var(--faint);
+}
+
+/* external link icon*/
+.mw-parser-output a.external {
+    filter: invert(100%) saturate(0);
+    background-blend-mode: color-dodge;
+}
+
+/* edit icon */
+img[alt="Edit this at Wikidata"] {
+  filter: saturate(0);
+}
+
+/* magnify icon */
+.magnify a {
+    opacity: 0.7;
+    filter: invert(100%);
+    background-image: url(/w/resources/src/mediawiki.skinning/images/magnify-clip-ltr.svg?8330e) !important;
+}
+
+/* search icon*/
+.searchButton[name='go'] {
+    filter: invert(100%);
+    opacity: 0.4;
+}
+
+/* user icon*/
+.vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-userpage a {
+    filter: invert(100%);
+    background-image: url(/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58) !important;
+}
+
