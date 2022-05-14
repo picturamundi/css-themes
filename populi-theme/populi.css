@@ -1,0 +1,1102 @@
+/*make simple edits to this theme by adjusting the rgb values below*/
+
+:root {
+  /*black and white*/
+     --blck: rgb(15, 16, 17);
+     --whit: rgb(245, 245, 245);
+  
+  /*background colors*/
+     --bck0: rgb(38, 41, 43);
+     --bck1: rgb(29, 31, 32);
+     --bck2: rgb(24, 25, 26);
+     --bck3: rgb(48, 52, 54);
+  
+  /*theme colors*/
+     --clr0: rgb(52, 146, 134);
+     --clr1: rgb(47, 117, 150);
+     --clr2: rgb(245, 165, 89);
+     --clr3: rgb(255, 123, 0);
+     --gsc0: rgb(160,160,160);
+     --gsc1: rgb(045,045,045);
+     --tran: rgba(0,0,0,0);
+  
+  /*hover colors*/
+     --hov0: rgba(076,156,190,0.3);
+     --hov1: rgba(100,100,100,0.3);
+  
+  /*badges and icons*/
+     --notf: rgb(255, 101, 40);
+     --like: rgb(47, 117, 150);
+     --word: rgb(15, 133, 187);
+     --disc: rgb(47, 117, 150);
+      
+  /*test results*/
+     --answ: rgb(47, 117, 150);
+     --crct: rgb(109, 231, 98);
+     --fals: rgb(255, 101, 40);
+  }
+  
+  /*.js-feed {
+    background-color: var(--bck2);
+    padding:10px;
+    border-radius: 5px;
+  }*/
+  
+  
+  /*misc*/
+  
+  .drop-down-list-link {
+    color: var(--whit);
+  }
+  
+  .fa-red {
+    color: var(--clr1);
+  }
+  
+  div#page-container {
+    background: red !important;
+  }
+  
+  .js-feed {
+    background-color: var(--bck2);
+    padding:20px;
+    border-radius: 5px;
+  }
+  
+  .newsitem {
+    background-color: var(--bck1);
+    border-radius: 3px;
+    padding: 10px;
+  }
+  
+  /**Post preview fadeout**/
+  .fadeout {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,var(--bck1) 100%);
+  }
+  
+  /*Likes*/
+  .post_likes, .comment-likes, .newsitem-likes {
+    background-color: var(--tran) !important;
+  }
+  
+  .footer a {
+    color: var(--gsc2);
+  }
+  
+  body, .post-body, .comment-body, .newsitem-body {
+    line-height: 1.6;
+  }   
+  
+  br {
+      display: block !important;
+      margin-bottom: 1.5em !important;
+  }
+  
+  /*alerts*/
+  div#js-alerts_container.box {
+    margin-top: 20px;
+  }
+  .column_item .alert {
+      color: var(--gsc0);
+      background-color: var(--bck3)
+      ;
+      padding: 5px;
+      width: 80%;
+  }
+  .alert { /*alerts*/
+    background-color: var(--bck0);
+    padding: 5px;
+    color: var(--gsc0);
+  }
+  a.alert.remote_nav:hover {
+      background-color: var(--hov0) !important;
+  }
+  
+  div.jGrowl-closer.highlight.ui-corner-all.default {
+    background-color: var(--bck3);
+    color: var(--whit);
+  }
+  
+  p.notice-bolder {
+    background-color: var(--clr0);
+    color: var(--blck);
+  }
+  
+  /*calendar colors*/
+  .eventbg2_3 {
+    background-color: var(--clr0);
+    border: none;
+  }
+  
+  #mini_cal {
+    visibility: hidden;
+  }
+  
+  .num_hidden a, .monthon .num_hidden a {
+    background-color: var(--bck0) !important;
+  }
+  
+  
+  /*files tab*/
+  .file-meter {
+    background-color: var(--gsc1);
+  }
+  
+  .file-meter div {
+      border-right: 4px solid var(--clr1);
+      background-color: var(--clr1);
+  }
+  
+  #filestable div[style*="height:30px"] {
+    background-color: var(--bck2);
+    border: none;
+  }
+  
+  /*to do popup calendar*/
+  #dp-popup, .weekday, .weekend {
+    background-color: var(--bck2);
+  }
+  
+  /*black text*/
+  p {
+    color: var(--gsc0);
+  }
+  
+  /*assignment comments*/
+  .file_container {
+    background-color: var(--bck1);
+    padding: 5px;
+  }
+  
+  .file_container:hover {
+    background-color: var(--hov0);
+  }
+  
+  /*compact uploader*/
+  .uploader-compact {
+    border: none;
+    background-color: var(--bck1);
+  }
+  
+  .uploader-compact:hover {
+    background-color: var(--hov0);
+  }
+  
+  .uploader-drop-area {
+      text-overflow: ellipsis;
+  }
+  
+  /*dotte borders*/
+  .blankslate {
+    border: none;
+  }
+  
+  /*discussion color*/
+  .num_comments_bubble_new {
+    background-color: var(--clr1);
+    border-color: var(--clr1);
+  }
+  
+  /*tabs*/
+  #controltabs li a.currentControlTab {
+      background-color: var(--bck1) !important;
+      border: none;
+      color: var(--gsc0) !important;
+  }
+  
+  #controltabs li a.currentControlTab:hover {
+    background-color: var(--hov1) !important;
+  }
+  
+  /*Load more*/
+  .loadmore {
+    background-color: var(--bck0);
+    border: none;
+    color: var(--gsc0);
+  }
+  
+  /*post comments, replies*/
+  .newsitem-replies, .newsitem-replies {
+  background-color: var(--bck1);
+  color: var(--whit);
+  }
+  
+  /*profile controlbar*/
+  .farleftcol ~ .controlbar {
+    margin-left: 200px;
+  }
+  
+  /*Feed icons and headings*/
+  .feed-icon {
+    background-color: var(--clr0);
+  }
+  
+  /*profile heading, big name*/
+  .newsitem-body h5 {
+    color: var(--whit);
+  }
+  
+  /*discussions*/
+  .fa-comments:before {
+    content: "\f075";
+    color: var(--disc);
+  }
+  
+  .bigname {
+    color: var(--whit);
+  }
+  
+  /*profile hover*/
+  .tooltipster-box, .tooltipster-content {
+    background-color: var(--bck2);
+    border: 1px solid var(--gsc1);
+  }
+  div.tooltipster-arrow-background {
+    border-left-color: var(--gsc1);
+    opacity: 1;
+  }
+  div.tooltipster-arrow-border {
+      border-left-color: var(--gsc1);
+  }
+  
+  /*You must leave a comment*/
+  .notice-bolder {
+    background-color: var(--clr1);
+  }
+  
+  /*Test and quiz answer*/
+  .correct {
+    color: var(--answ);
+  }
+  .question .fa-red {
+    color: var(--fals);
+  }
+  
+  .question .fa-green {
+    color: var(--crct);
+  }
+  
+  /*Like button*/
+  .social_counter {
+    background-color: var(--gsc1);
+    border: 1px solid var(--gsc1);
+    color: var(--gsc0);
+  }
+  
+  .fa-red[title="Unlike this"] {
+    color: var(--like);
+    font-size:18px;
+  }
+  
+  .comment-likes .fa {
+    opacity:0;
+    width: 0px;
+  }
+  
+  .comment-likes a, .newsitem-likes a {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+  
+  .comment-likes, .newsitem-likes {
+    font-size: 0px;
+  }
+  
+  .comment-likes a:after, .newsitem-likes a:after {
+    font-size:12px;
+    content:" (゜Д゜)旦 ";
+    color: var(--clr2);
+    font-weight: bold;
+    padding: 5px;
+  }
+  
+  .comment-likes:after, .newsitem-likes:after {
+    font-size:12px;
+    content:" 'hear hear!'";
+    color: var(--like);
+  }
+  
+  .social_counter:after {
+   position: absolute;
+   top: 3px;
+   right: auto;
+   left: -11px;
+   content: '';
+   border-top: 5px solid transparent;
+   border-left: 5px solid transparent;
+   border-right: 5px solid var(--gsc1);
+   border-bottom: 5px solid transparent;
+   display: inline-block;
+  }
+  
+  .fa-heart:before {
+    content: "\f0fc";
+  }
+  
+  .fb_header span {
+    opacity: 0;
+  }
+  
+  .fb_header span:before {
+    opacity: 1;
+    content: "ba";
+  }
+  
+  /*pdf viewer*/
+  div.document_viewer_controls {
+    background-color: var(--bck2);
+    border-bottom: none;
+  }
+  
+  .document_viewer_wrapper {
+    border: none;
+  }
+  
+  .file-viewer-controls {
+    background-color: var(--bck0);
+    border: none;
+  }
+  
+  
+  /*Time remaining*/
+  div[style*="top:175px"] {
+    background-color: black;
+    border:none;
+  }
+  
+  /*Assignment file submission area*/
+  
+   .js-file_submission_container .show_hide div span[style*="color:red"], #subview_container div span[style*="color:red; border:1px"]/*past due time*/ {
+     font-weight: bold;
+     font-size: 12px;
+     border: 2px solid var(--notf);
+     color: rgba(0,0,0,0);
+     letter-spacing: -5.5px;
+     padding-bottom: 2px;
+   }
+  
+   .js-file_submission_container .show_hide div span[style*="color:red"]:after, #subview_container div span[style*="color:red; border:1px"]:after {
+     content: "";
+     font-size: 12px;
+     font-weight: bold;
+     letter-spacing: 0px;
+     color: var(--notf);
+     margin-left: 5px;
+   }
+  
+  .js-file_submission_container .show_hide div span[style*="color:red"]:before, #subview_container div span[style*="color:red; border:1px"]:before {
+     content: "TOTALLY not late... (ಥ﹏ಥ)";
+     font-size: 12px;
+     font-weight: bold;
+     letter-spacing: 0px;
+     color: var(--notf);
+     margin-left: 10px;
+     margin-right: 5px;
+   }
+  
+  .js-file_submission_container {
+    background-color: var(--bck0) !important;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .uploader-full .uploader-drop-area {
+    background-color: var(--bck0);
+    border: solid 2px var(--bck0);
+    color: var(--gsc0);
+  }
+  
+  /*LBS logo watermark*/
+  .header div h1 img {
+    height: 20px;
+    opacity: 0.7;
+    margin-top: 5px;
+  }
+  
+  .js-header-text {
+    font-size: 60%;
+    color: var(--gsc0);
+  }
+  
+  /*Middle column, center content area*/
+  
+  .col1 {
+    background-color: var(--gsc0) !important;
+  }
+  
+  /**Class Heading**/
+  .controlbar h3 {
+      color: var(--whit);
+      font-variant: small-caps;
+      font-size: 1.8em;
+  }
+  
+  /*Directory thingy*/
+  .profile_top_right {
+       background: linear-gradient(to right,var(--bck0) 0%, var(--bck0) 18px);
+  }
+  
+  /*Like notification*/
+  .postedelsewhere, .completed_todo {
+    background-color:var(--bck2);
+  }
+  
+  /*Course icon*/
+  .course_thumbnail {
+    background-color: var(--clr0);
+  }
+  
+  .remote_nav .course_thumbnail {
+      border-radius: 50% !important;
+  }
+  
+  /*Comments and read/unread*/
+  
+  /*contribute to this discussion*/
+  #discussion_container div.clear {
+    background-color: var(--bck2);
+    border-radius: 5px;
+    margin-left: 0px;
+    padding: 15px;
+  }
+  
+  
+  #discussion_container div.clear {
+    /**margin-left: 0px;**/
+    padding-right: 18px;
+    /**margin-right: 18px;**/
+    border-top: none;
+  }
+  
+  .uploader-compact {
+    border-color: var(--gsc1);
+  }
+  
+  
+  
+  div.js-post_container.comment.js-comment {
+    background-color: var(--bck2);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .comment .fa-clr-unread, .comment .fa-circle {
+    position: absolute;
+    margin-top: 20px;
+  }
+  
+  .reply .fa-clr-unread, .reply .fal {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 4px;
+  
+  }
+  
+  .fa-clr-unread {
+    color: var(--clr1);
+  }
+  
+  
+  div.comment-body {
+    padding: 10px;
+    background-color: var(--bck1);
+    border-radius: 3px;
+    margin-right: 15px;
+  }
+  
+  span.js-number_unread {
+    background-color: var(--color2);
+  }
+  
+  /*User icons and thumbnails*/
+  .social_head_picture, .social_head_small_picture, .social_head_smaller_picture, .social_head_big_picture, .contact-row-thumbnail {
+      border-radius: 50%;
+  }
+  
+  .contact-row-thumbnail {
+    border: 3px solid var(--clr4);
+  }
+  
+  /**/
+  .js-contact_results div {
+    border: none;
+  }
+  
+  /*My courses page*/
+  .column_item, .column_item_short /*divider lines*/ {
+      border-bottom: none;
+      border: 0px solid;
+      padding: 10px;
+      background-color: var(--bck0);
+      border-radius: 5px;
+  }
+  
+  .course_thumbnail {
+      margin-top:10px;
+  }
+  
+  
+  /*Right-column boxes, schedules, links etc.*/
+  #colwrap #col2 div.clear {
+      background-color: var(--bck2) !important;
+      border:none !important;
+      padding:15px !important;
+  }
+  
+  /*right column without rubriques*/
+  #col2 {
+      background-color: var(--bck2);
+      padding: 10px;
+       margin-top: 35px;
+     border-radius: 5px;
+     margin-left: 10px;
+  }
+  
+  /*edit comment box, like profile*/
+  #facebox .fb_header, #facebox .fb_content, .fb_content .modalcontrols {
+      background-color: var(--bck2);
+      border-top:none;
+  }
+  .fb_main, .fb_header, .fb_content {
+    border-radius: 5px;
+  }
+  .fb_main {
+    background-color: var(--bck2);
+  }
+  
+  input {
+      color: -internal-light-dark(var(--blck),var()) !important;
+  }
+  
+  .course_offering_singlecol #colwrap #col1 div.clear {
+      border-bottom: none !important;
+  }
+  
+  /*Calendar*/
+  .dateback, .monthback, .monthreg, .monthon, .monthoff, .monthsel {
+      background-color: var(--bck2) !important;
+  }
+  
+  .monthname ~ div td {
+    border: 1px solid var(--gsc1);
+  }
+  
+  .eventbg2_1 {
+    background-color: var(--clr1);
+  }
+  
+  /*Future discussion titles*/
+  .column_item_title {
+      color:var(--whit) !important;
+  }
+  
+  /*Dotted borders*/
+  .discussions-list td {
+      border-bottom: none;
+  }
+  
+  /*Notices e.g. No alerts available; no posts...*/
+  .notice {
+    color: var(--clr1);
+    margin-left: 0px;
+  }
+  .notice::before {
+    content: "¯\\_(ツ)_/¯ ";
+    font-weight: bold;
+    color: var(--clr2);
+    padding: 3px;
+    border-radius: 3px;
+    margin-right: 3px;
+  }
+  
+  #add_comment_wrapper {
+      background-color: var(--bck2) !important;
+      border:none !important;
+  }
+  
+  /*Tables*/
+  .rowhighlight tbody tr:hover, th.sortable:hover, .rowhighlight tbody tr.altrow:hover {
+      background-color:var(--hov0) !important;
+  }
+   
+  th {
+      color: var(--whit);
+      border-bottom: 3px solid var(--gsc0);
+      font-size: 0.9em;
+  }
+  td {
+      color: var(--gsc0);
+  }
+  
+  /*Minor divider lines*/
+  tbody th, .column_header {
+      border-bottom:none;
+  }
+  td {
+      border-bottom:none;
+  }
+  
+  /**table odd rows**/
+  .striped tbody tr:nth-child(odd), .striped tbody tr td.odd_background {
+      background-color: var(--bck0);
+  }
+  
+  /**default text color**/
+  body {
+      color:var(--gsc0) !important;
+      background-color: var(--bck0);
+  }
+  
+  /**Top menu hover**/
+  .js-header-tab:hover {
+      background-color: var(--hov0) !important;
+  }
+  
+  
+  body>.header .nav a.current:hover {
+    background-color: var(--hov1);
+  }
+  
+  /**Pills ("take now!")**/
+  .pill {
+      background-color: var(--gsc1) !important;
+      color: var(--gsc0);
+  }
+  
+  /**Notification**/
+  .jGrowl .alert {
+      color: var(--whit);
+      font-weight: bold;
+      background-color: var(--clr2)
+      ;
+  }
+  
+  /*
+  .jGrowl-message {
+    font-size: 0px;
+  }
+  */
+  
+  .jGrowl-message:after {
+    font-size: 16px;
+    content: ".. -_-";
+  }
+  
+  J
+  
+  .alert span[style*="font-weight:bold"]/*take now*/ {
+    color: var(--gsc2);
+    background-color: var(--bck1);
+    border-radius: px;
+    padding: 3px;
+  }
+  
+  .alert span[style*="font-weight:bold"]:hover {
+    background-color: var(--hov0);
+  }
+  
+  
+  a.alert.remote_nav:before {
+    position: relative;
+      content: "●";
+      font-weight: 400;
+    font-size: 1.9em;
+    color: var(--notf);
+    left: -10px;
+    bottom: 14px;
+    line-height: 0.7em;
+    text-shadow: 0px 0px 5px var(--blck);
+  }
+  
+  .fa-bell {
+    opacity: 0;
+    font-size: 0;
+  }
+  
+  /*select menu*/
+  .select, .new_select {
+      background: var(--blck);
+      border:2px solid var(--blck);
+  }
+  
+  /**Right sidebar items (links, files etc.)**/
+  a, #loginbox a, #files ul ul a, .drag a, .minical a {
+      color:var(--whit);
+  }
+  .fa-clr-word {
+      color:var(--word) !important;
+  }
+  
+  .fa-clr-pdf {
+    color: var(--notf);
+  }
+  
+  ul li a:hover {
+      background-color: var(--hov0) !important;
+      color: var(--whit) !important;
+  }
+  
+  
+  /**Back arrow text**/
+  a.remote_nav:hover {
+      color:var(--whit) !important;
+      text-decoration: none !important;
+  }
+  
+  /**Hover menu items left panels**/
+  .columnnav li a:hover {
+      background-color: var(--hov0) !important;
+      color:var(--whit) !important;
+      border-bottom: none !important;
+  }
+  
+  /**Right Side Panel and tabs**/
+  .singlecol .columnnav li a.currentcolumnnav {
+      background-color: var(--bck1) !important;
+  }
+  #col2 ul .currentcolumnnav {
+    background-color: var(--bck2);
+    border-bottom: none;
+  }
+  
+  .columnnav li a {
+      background-color: var(--bck2);
+  }
+  
+  /*secondary tabs*/
+  .currentcolumnnav {
+      background-color: none !important;
+      color:var(--color) !important;
+  }
+  .currentcolumnnav:hover {
+      background-color: var(--bck0) !important;
+  }
+  .columnnav, .currentcolumnnav {
+      border-color: var(--gsc1);
+      border-width: 2px;
+  }
+  .currentcolumnnav {
+    border-bottom-width: 0px;
+  }
+  
+  /**Red text in posts**/
+  .xmsonormal span {
+      color:var(--color) !important;
+      font-weight:bold !important;
+  }
+  
+  /**Posting rubrics**/
+  #addPostForm div.clear #post, #discussion_container div.clear #post {
+      background-color: var(--blck) !important;
+      border:0px !important;
+  }
+  
+  #addPostForm div.clear {
+    background-color: var(--bck2) !important;
+    border: none !important;
+  }
+  
+  /**Page background**/
+  body#content {
+      background-color: var(--bck0);
+  }
+  
+  /**Login**/
+  .input-button {
+      background-color: var(--blck) !important;
+      border: 0px;
+      border-left: 0px !important;
+  }
+  
+  /**Login fields plus login button**/
+  input[type="text"], input[type="password"], input[type="number"], input[type="tel"], input[type="email"], input[type="url"], textarea, #loginbox input[type="password"], #loginbox input[type="text"] {
+      
+      background: var(--blck) !important;
+      color:var(--whit) !important;
+      border: 0px;
+  }
+  .button, .newbutton, .cke_skin_kama a.cke_dialog_ui_button {
+      background: var(--blck) !important;
+      color:var(--whit) !important;
+      border: 0px !important;
+  }
+  
+  /**Login Image and backgrounds**/
+  #loginbox h1 {
+      background-image: url(https://lh3.googleusercontent.com/fife/AAWUweVI6FTpS74FeVLXOTwDT854zQDGhYml-olRuDBDAlkPDWxMXy9H0l1gd3revdujFpayrusargepXru7NkoKauU3GEx5Rbb0DXxC6L97suhP0vDZGvHfn61LqhJzGMwzOCdFe7cwhcDqC3DlDixIt8Ew3D3R4PTxUUs_JVTsvrXqo_U72Xhrpu2RabwPEpphgH0FnU_qrRruXgjjK4JWwt6iGh2tYBGxjKQU-sHKq1DkwpdFMKeUQI3eQRefgaWA9o25vPGXWIz1egXFDEgLDm9Byr2GVAV8s_FkyvTyRyixWdM0vwggkJf0ESIVoIRsVdte6kAaP7q16yil6TusGUYRcWIeTmWIhPhOIJvzBQ96Q8KAAhc7f1PuG-5_rAfT0T4VyUTwfrJsdFsm4mBODG1zyKqskfshyq3SrHsrDQUoCji0sDFcGeJNk0FjAc5CbO3DEtT5mRkcqPdzZWesZi6qVhkzFke0IhQpnMpDuOjAKNMw-eBpAAYIgPPe1QE7MLQQ7-SozEhH2yXBC-0mJlhaIJB-LE5J85QTVKFbqSi8lQXjb2qdTZ1aNN8jNm45X0YjatoHA4NokdZ7Th0o4V0cqXDMXF996oOCv6z-802HM8BTL_S0HNy0iAQE8kV90ZOMinkon2fFcOk9-u1TeTrjH7sze6OJ0WJds2Y9W8EdLIuo4-azSlh6-X1hcPG9UgU_zctomE1VYYW9QsH_SXAIn_2FHIQSaw=w3360-h1950-ft);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+  
+  #loginbox {
+      background-color: rgb(30,30,30) !important;
+  }
+  #loginbox h1 img[alt='Lutheran Brethren Seminary'] {
+      opacity:0;
+  }
+  h1 img[alt='Lutheran Brethren Seminary'] {
+      opacity:1;
+  }
+  
+  
+  /**Schedule panel**/
+  li.clear ul li strong {
+      color:var(--whit);
+  }
+  
+  /**Major divider lines**/
+  .singlecol h4, #col1 h4, #col2 h4, 
+  #load_schedule ul li ul li,.controlbar {
+      border-bottom: 0px var(--gsc0) solid !important;
+  }
+  
+  
+  /**Status, Grade**/
+  .course-student-prominent-info-container {
+      background-color: var(--blck);
+      border: 0px;
+  }
+  
+  
+  
+  /**background color**/
+  #main {
+      background-color: var(--bck0);
+  }
+  .singlecol {
+      background-color: var(--bck0);
+  }
+  
+  /**LBS Banner**/
+  body>.header {
+      background-color: var(--color); 
+  }
+  
+  /**Headings**/
+  h4 {
+      color:var(--whit);
+  }
+  
+  /**Left sidebar menu and course thumbnail**/
+  
+  .farleftcol .course_thumbnail {
+      margin-top: -65px;
+      margin-bottom: 65px;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      margin-left: 12px;
+  }
+  
+  .course_thumbnail_wrap {
+    padding-bottom: 0px;
+  }
+  
+  #side ul li.selected a, .side ul li.selected a {
+      color:var(--whit);
+      background-color: var(--blck) !important;
+  }
+  
+  .farleftcol .course_offering_menu /*Positioning text*/ {
+      margin-left: 15px !important;
+      margin-top: 95px;
+      margin-bottom: 50px;
+  }
+  
+  .farleftcol .course_offering_menu ul /*Selector width*/ {
+      width: 115px;
+  }
+  
+  
+  .farleftcol {
+    padding: 5px;
+  }
+  
+  #main .singlecol, #main .course_offering_singlecol {
+      background-color: var(--bck1) !important;
+  }
+  
+  
+  .farleftcol {
+      background-color: var(--bck2) !important;
+      width: 145px !important;
+      margin-left: 15px;
+      margin-top: 80px;
+      border-radius: 5px;
+  }
+  
+  /**Footer**/
+  body>.footer {
+      background-color: var(--bck0);
+      border-top: 0px solid green;
+  }
+  
+  #main, .singlecol {
+    border-bottom: none;
+  }
+  
+  /**Completed Items**/
+  .fa-green {
+      color:var(--color) !important;
+  }
+  
+  /**Course thumbnail**/
+  
+  .fa-comments {
+      color: var(--clr0) !important;
+  }
+  
+  /*adjusting black*/
+  #post {
+    background-color: var(--blck);
+  }
+  
+  div button span {
+    background-color: var(--blck);
+  }
+  
+  #side ul li.selected a, .side ul li.selected a {
+    background-color: var(--blck) !important;
+  }
+  
+  /*use icon and user menu/drop down*/
+  span.user_thumbnail {
+    border-radius: 50%;
+  }
+  div.drop-down-list {
+    background-color: var(--bck2);
+    border:none;
+  }
+  
+  div.drop-down-arrow-top, div.drop-down-arrow-bottom {
+    border-bottom: 7px solid var(--bck2);
+  }
+  
+  /*left menu hover*/
+  .side ul li a:hover {
+    color: var(--whit);
+  }
+  #side ul li.selected a, .side ul li.selected a:hover {
+      color:var(--whit) !important;
+      background-color: var(--hov1);
+  }
+  
+  /*default link style*/
+  a:hover {
+    color: var(--clr1);
+    text-decoration: none;
+  }
+  
+  a strong:hover {
+    color: var(--clr1);
+  }
+  
+  /*just like... main page text area?*/
+  .js-section_content_frame {
+    background-color: rgb(80,81,83);
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  /*random tab corners??*/
+  .js-header-tab {
+    border-radius: 3px;
+  }
+  .currentControlTab {
+    border-radius: 3px 3px 0px 0px;
+  }
+  
+  /*loading thingy*/
+  .fb_loading {
+    background-color: var(--bck3);
+    border-radius: 8px;
+  }
+  div.cp-spinner.cp-spinner-medium::before {
+    filter: saturation(0%);
+  }
+  div.cp-spinner.cp-spinner-medium::after {
+    background-color: var(--bck1);
+    border: 1px solid
+  }
+  
+  /*splitter*/
+  .splitter {
+    color: var(--gsc2);
+  }
+  
+  /*course offering*/
+  .course_offering_name {
+    margin-left: -30px;
+  }
+/*
+  .course_offering_name:before {
+    content: "(⌐▀͡ ̯ʖ▀)=☞";
+    padding-right: 10px;
+    color: var(--clr2);
+    font-family: monospace;
+    letter-spacing: -3px;
+  }*/
+  
+  /*bigname*/
+  .bigname::before {
+    content: "( ▀ ͜͞ʖ▀ )";
+    padding-right: 10px;
+    color: var(--clr2);
+    letter-spacing: px;
+  }
+  
+  #col1:after {
+    display: block;
+    margin-left: 200px;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-image: url("https://lh3.googleusercontent.com/fife/AAWUweWjo5dyE1s8vHBqE-BDaUk0WHrunj-U2bYmfShA6_V55wXJqXwRwd3t65MrmWBRUeGMnz7G12JcCjyO3c8NFGMBRdkLMts_umDkneTX3131UP5Qzky_p1vqOV8IMzhaKKSTCc3zR-ItNuzyAk8IjjA2t18vccHlIX-QrDILOgB4tcizb3IM-D8td18fbWb8VSfT6mMpky9mgvWr9ThZ-9D8M32LK-9TxERtnifxMe1iOxYkhjsoedjCnx1fSBQ3NpCBDaNMQiTuRQKKfgiyn6Lp55blUZ4Ascxl500De2xUyKS-olFharQHCK3WCiAdmpgCJ_G1j1WZXMGKrbPWDYAgtZau1GDqWyItp3xIwCw1fhkVEVh_qVEradphZXhYCu75aQobhpwMyavuK3H2_vZUt8jzf8OpjY2mrPxL_cAQ_ZZpEYPIBbw_Wj6vQv2TBHddDMtdK4OAgJhq95yiqkVhvPnoPROG4U99Jd7BfnvyWZlMLkwIlxSqhOgZHP7NYZ-LecEVY_uwv38IPNASgakqSqwieCvg-zXWz7akXJKupfBkpRXf59kJ-kfN_l7AvbxNh6Clw-BL1yE0k6Gb2ptrmDniP4HAI09ukDVNc20x5pn8IW9NSJkuazDnvTWb8Dx-ozVLU0Kd4ePLph34rVmprkjkKo1pcqzWHYMmQDfGxSSjI0YwqHnW0EP88ROU9HUXQ9WPs_-kYJvVDLvt1bvLe9_RmWAK4PQ=w2626-h1822-ft");
+  /*      filter: invert(50%) sepia(100%) saturate(250%) hue-rotate(130deg) brightness(75%) contrast(90%);
+  */
+  }
+  
+  /*star icon*/
+  .fa.fa-star {
+    color: var(--clr1);
+  }
+  
+  /*why do I even try...*/
+  div.comment-replies {
+    background-color: var(--bck1);
+    margin-right: 15px;
+    padding: 5px;
+    margin-left: 47px;
+    border-radius: 3px;
+  }
+
+.social_counter {
+  background-color: var(--gsc1) !important;
+}
+
+.course_offering_singlecol #colwrap #col1 div.clear {
+  margin-left: 0px !important;
+  background-color: var(--bck2) !important;
+  border-top: solid black 0px !important;
+}    
+
+/* notice strong */
+.notice_strong {
+  background-color: black;
+  border-color: var(--clr2);
+  color: var(--clr2);
+  opacity: 0.8;
+}
+
+/* social head image thingy */
+.social_head_small {
+}
+
+
+
+/* Lession area text*/
+iframe {
+  color: white !important;
+  filter: invert (100%);
+}

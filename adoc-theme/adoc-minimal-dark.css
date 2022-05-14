@@ -1,0 +1,116 @@
+:root {
+  --back: rgb(30,30,30);
+  --text1: rgb(255,255,255);
+}
+
+
+body {
+  background-color: var(--back);
+}
+
+#header, #content, #footer {
+  position: relative;
+  width: 650px;
+  left: 50%;
+  margin-left: -325px;
+}
+
+*, a, a:hover {
+  color: var(--text1);
+  font-family: courrier, monospace;
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+#header {
+  border-bottom: 2px dotted var(--text1);
+}
+
+#toc {
+  margin-top: 16px;
+}
+
+pre {
+  overflow: scroll;
+  color: var(--text1t);
+  opacity: 0.4;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.admonitionblock .title {
+  font-weight: 600;
+}
+
+.admonitionblock .icon .title {
+  text-transform: uppercase;
+}
+
+.admonitionblock .title::after {
+  content: ": ";
+}
+
+.admonitionblock .icon {
+  vertical-align: top;
+}
+
+.admonitionblock .content .paragraph p {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+  border-bottom: 2px dotted var(--text1);
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px dotted var(--text1);
+}
+
+.listingblock .title {
+  margin-left: -16px;
+  margin-bottom: -12px;
+}
+
+.listingblock .title:after {
+  content: ": ";
+}
+
+.listingblock, .literalblock pre, .admonitionblock {
+  margin-left: 20px;
+}
+
+.listingblock, .exampleblock, .admonitionblock {
+  margin-bottom: 16px;
+}
+
+.paragraph.lead p {
+  font-size: 1rem;
+}

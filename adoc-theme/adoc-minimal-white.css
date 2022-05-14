@@ -1,0 +1,150 @@
+:root {
+  --back: rgb(255,255,255);
+  --text1: rgb(0,0,0);
+}
+
+body {
+  background-color: var(--back);
+}
+
+#header, #content, #footer {
+  position: relative;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+}
+
+*, .gist .blob-num, .gist .gist-meta {
+  font-family: courrier, monospace;
+}
+
+*, a, a:hover {
+  color: var(--text1);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+#header {
+  border-bottom: 2px dotted var(--text1);
+}
+
+#toc {
+  margin-top: 16px;
+}
+
+pre {
+  overflow: scroll;
+  color: var(--text1t);
+  opacity: 0.4;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.admonitionblock .title {
+  font-weight: 600;
+}
+
+.admonitionblock .icon .title {
+  text-transform: uppercase;
+}
+
+.admonitionblock .title::after {
+  content: ": ";
+}
+
+.admonitionblock .icon {
+  vertical-align: top;
+}
+
+.admonitionblock .content .paragraph p {
+  margin-top: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.7em;
+  border-bottom: 2px dotted var(--text1);
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+hr {
+  border: none;
+  border-bottom: 2px dotted var(--text1);
+}
+
+.listingblock .title {
+  margin-left: -16px;
+  margin-bottom: -12px;
+}
+
+.listingblock .title:after {
+  content: ": ";
+}
+
+.listingblock, .literalblock pre, .admonitionblock {
+  margin-left: 20px;
+}
+
+.listingblock, .exampleblock, .admonitionblock {
+  margin-bottom: 16px;
+}
+
+.paragraph.lead p {
+  font-size: 1rem;
+}
+
+.attribution {
+  text-align: right;
+}
+
+.quoteblock blockquote {
+  font-style: italic;
+}
+
+.gist {
+  border-top: 1px dotted var(--text1);
+  border-bottom: 1px dotted var(--text1);
+}
+
+.gist .blob-num {
+  font-size: 0.9rem;
+}
+
+.gist .gist-file {
+  border: 0px solid rgba(0,0,0,0) !important;
+  margin-bottom: 0em !important;
+}
+
+.gist .gist-meta {
+  background-color: var(--back) !important;
+  border-bottom: 0px;
+  border-top: 0px;
+}
+
+.gist-data {
+  border-bottom: 0px !important;
+}
