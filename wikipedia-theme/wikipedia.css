@@ -523,7 +523,7 @@ div.vector-menu-content ul li#n-mainpage-description a {
 .mw-wiki-logo {
     filter: contrast(150%) brightness(70%);
     padding: 5px;
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fthumb%2F8%2F80%2FWikipedia-logo-v2.svg%2F1200px-Wikipedia-logo-v2.svg.png&f=1&nofb=1);
+    background-image: url(https://github.com/picturamundi/css-themes/blob/main/wikipedia-theme/wikipedia-logo.png?raw=true);
     width: 148px !important;
     background-size: 110px;
     
