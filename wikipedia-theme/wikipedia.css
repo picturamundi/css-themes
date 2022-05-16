@@ -34,7 +34,7 @@
 */
 
 *::selection {
-    background-color: var(--accent2);
+    background-color: var(--accent3);
     color: var(--accent1);
 }
 
@@ -562,4 +562,3 @@ img[alt="Edit this at Wikidata"] {
     filter: invert(100%);
     background-image: url(/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58) !important;
 }
-
