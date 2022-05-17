@@ -7,7 +7,7 @@
     --text2:     rgb(250,250,250);
     --text3:     rgb(100,100,100);
     --faint:     rgb(34,96,62);
-    --accent1:   rgb(44,176,107);
+    --accent1:   rgb(49,173,108);
     --accent2:   rgb(34,96,62);
     --accent3:   rgb(23,67,43);
     --newA:      rgb(251,0,79);
@@ -107,6 +107,12 @@ body {
 ## Article
 */
 
+/* metadata preamble */
+table.metadata {
+    background-color: var(--back2) !important;
+    border: 1px solid var(--accent2) !important;
+}
+
 /* article background */
 .mw-body {
     background-color: var(--back1) !important;
@@ -121,10 +127,11 @@ body {
     border: 1px solid var(--faint);
 }
 
-/* article infobox */
-.infobox, .toc, .mw-parser-output .sidebar, div.thumbinner {
+/* article infobox, quotebox */
+.infobox, .toc, .mw-parser-output .sidebar, div.thumbinner, .mw-parser-output .quotebox {
     background-color: var(--back2);
     border: 1px solid var(--faint);
+    border-radius: 2px;
 }
 
 /* article infobox and sidebar collpsibles */
@@ -292,11 +299,11 @@ table[role='presentation'] {
 
 /* top bar dividers */
 .vector-menu-tabs a {
-    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent2) 100%);
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent3) 100%);
 }
 .vector-menu-tabs, #mw-head .vector-menu-dropdown .vector-menu-heading {
     background-image: url(/w/skins/Vector/resources/common/images/tab-separator.png?09d4b);
-    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent2) 100%);
+    background-image: linear-gradient(to bottom,rgba(167,215,249,0) 0,var(--accent3) 100%);
 }
 
 /* search results */
@@ -348,24 +355,41 @@ table[role='presentation'] {
 ## Popups
 */
 
+/* link to article */
+
 .mwe-popups {
     background: none;
 }
-
 .mwe-popups .mwe-popups-extract {
     color: var(--back2);
 }
-
 .mwe-popups-container {
     background-color: var(--accent1) !important;
 }
-
 .mwe-popups .mwe-popups-extract[dir='ltr']:after {
     background-image:linear-gradient(to right,rgba(255,255,255,0), var(--accent1) 50%);
 }
-
 a.mwe-popups-settings-icon span::before {
     filter: invert(0);
+}
+
+/* link to reference */
+.rt-tooltip {
+  background-color: var(--accent1); 
+  border: none;
+}
+.rt-tooltipContent span.reference-text, .rt-tooltipContent span.reference-text a {
+  color: var(--back1); 
+} 
+.rt-tooltipContent .rt-settingsLink {
+  filter: brightness(0.6); 
+}
+.rt-tooltipTail::after, .rt-tooltipTail {
+    background: var(--accent1) !important;
+}
+.rt-tooltip .rt-tooltipContent a.external {
+    filter: invert(1);
+    color: white;
 }
 
 /*
@@ -465,9 +489,14 @@ h1, h2, h3, h4 {
 }
 
 /* links */
-
 a, .mw-parser-output a.extiw, .mw-parser-output a.external {
     color: var(--accent1);
+}
+
+/* bullets */
+
+.mw-body li::marker {
+    color: var(--text1);
 }
 
 /* table of contents */
@@ -514,6 +543,10 @@ div.vector-menu-content ul li#n-mainpage-description a {
     color: var(--text1);
 }
 
+/* edit links */
+.wb-langlinks-link > a:link, .wb-langlinks-link > a:visited {
+    color: var(--text1) !important;
+}
 
 /*-------------------------------------
 # ICONS AND IMAGES
@@ -531,12 +564,6 @@ div.vector-menu-content ul li#n-mainpage-description a {
 
 .thumbborder {
   border: 1px solid var(--faint);
-}
-
-/* external link icon*/
-.mw-parser-output a.external {
-    filter: invert(100%) saturate(0);
-    background-blend-mode: color-dodge;
 }
 
 /* edit icon */
@@ -561,4 +588,27 @@ img[alt="Edit this at Wikidata"] {
 .vector-user-menu-legacy #pt-anonuserpage, .vector-user-menu-legacy #pt-userpage a {
     filter: invert(100%);
     background-image: url(/w/skins/Vector/resources/skins.vector.styles.legacy/images/user-avatar.svg?b7f58) !important;
+}
+
+/* translation icon */
+img[src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Translation_to_english_arrow.svg/50px-Translation_to_english_arrow.svg.png"] {
+    filter: invert(1);
+}
+
+/* link to external */
+.mw-parser-output a.external {
+    background-image: url(https://github.com/picturamundi/css-themes/blob/main/wikipedia-theme/external.png?raw=true);
+    background-size: 8px;
+}
+
+/* link to PDF */
+.mw-parser-output a[href$=".pdf"].external, .mw-parser-output a[href*=".pdf?"].external, .mw-parser-output a[href*=".pdf#"].external, .mw-parser-output a[href$=".PDF"].external, .mw-parser-output a[href*=".PDF?"].external, .mw-parser-output a[href*=".PDF#"].external {
+    background-image: url(https://github.com/picturamundi/css-themes/blob/main/wikipedia-theme/pdf.png?raw=true);
+    background-size: 8px;
+}
+
+/* edit icon */ 
+.wb-langlinks-link > a:before {
+    background-image: url(https://github.com/picturamundi/css-themes/blob/main/wikipedia-theme/edit.png?raw=true);
+    background-size: 10px;
 }
